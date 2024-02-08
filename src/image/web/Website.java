@@ -14,7 +14,7 @@ import java.net.URL;
 import java.net.URLConnection;
 
 /**
- * Header class for websites.
+ * Head class for instances of websites.
  * @author Image (cursustemporum)
  *
  */

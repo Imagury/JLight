@@ -1,0 +1,5 @@
+JLIGHT
+
+Version: 0.1.2
+Author: Imagury (cursustemporum)
+Finished: Thu Feb 8 2024

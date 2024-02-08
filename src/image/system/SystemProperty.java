@@ -1,7 +1,7 @@
 package image.system;
 
 /**
- * Header class for receiving system properties available by Java.
+ * Head class for receiving system properties available by Java.
  * @author Image (cursustemporum)
  *
  */

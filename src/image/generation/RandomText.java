@@ -3,7 +3,7 @@ package image.generation;
 import java.util.Random;
 
 /**
- * Header class for string- and character-generating methods.
+ * Head class for string- and character-generating methods.
  * @author Image (cursustemporum)
  *
  */

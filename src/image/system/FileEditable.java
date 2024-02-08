@@ -7,7 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 /**
- * Header class for editing and managing files.
+ * Head class for editing and managing files.
  * @author Image (cursustemporum)
  *
  */
@@ -17,7 +17,7 @@ public class FileEditable extends File {
 	private String pathname;
 
 	/**
-	 * Header class for editing and managing files.
+	 * Head class for editing and managing files.
 	 * @author Image (cursustemporum)
 	 *
 	 */

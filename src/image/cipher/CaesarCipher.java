@@ -1,7 +1,7 @@
 package image.cipher;
 
 /**
- * Header class for caesar-cipher encryption and decryption.
+ * Head class for caesar-cipher encryption and decryption.
  * The Caesar cipher uses a character-shifting algorithm which
  * iterates through the ASCII characters from 32 (SPACE) to 126 (~).
  * @author Image (cursustemporum)

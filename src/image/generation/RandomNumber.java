@@ -6,7 +6,7 @@ import image.enums.NumberSign;
 import image.exception.NumberCastException;
 
 /**
- * Header class for number-generating methods and constructors.
+ * Head class for number-generating methods and constructors.
  * @author Image (cursustemporum)
  *
  */

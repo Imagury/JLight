@@ -5,7 +5,7 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 
 /**
- * Header class for system-based utilities.
+ * Head class for system-based utilities.
  * @author Image (cursustemporum)
  *
  */
