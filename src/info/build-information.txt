@@ -1,5 +1,5 @@
 JLIGHT
 
-Version: 0.1.2
+Version: 0.2.0
 Author: Imagury (cursustemporum)
 Finished: Thu Feb 8 2024
