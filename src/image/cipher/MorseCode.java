@@ -7,6 +7,7 @@ import java.util.Map;
  * Head class for morse-code encryption and decryption.
  * Morse uses a special alphabet with one equivalent to each character,
  * consisting out of dashes (-) and dots (.).
+ * @since JLight 0.2.0
  * @author Imagury (cursustemporum)
  *
  */
@@ -20,7 +21,7 @@ public class MorseCode {
 				"r", "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ",", ".", "?", " ", "!", "/", ":", "+", "-", "="};
 		String[] morse = { ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".---.", "--.-", 
 				".-.","...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", ".----","..---", "...--", "....-", ".....", "-....", "--...", "---..", "----.","-----", "--..--", ".-.-.-", "..--..", 
-		"/", "-.-.--", "-..-.", "---...", ".-.-.", "-....-", "-...-"};
+				"/", "-.-.--", "-..-.", "---...", ".-.-.", "-....-", "-...-"};
 
 		for(int i = 0; i < latin.length; i++) {
 			alph.put(latin[i], morse[i]);
@@ -34,6 +35,7 @@ public class MorseCode {
 	 * @return String
 	 * @see String
 	 * @param toEncrypt - input string to be encrypted.
+	 * @since JLight 0.2.0
 	 * @author Imagury (cursustemporum)
 	 */
 	public static String encrypt(String toEncrypt) {
@@ -50,13 +52,14 @@ public class MorseCode {
 		sb.setLength(sb.length() - 1);
 		return sb.toString();
 	}
-	
+
 	/**
 	 * Decrypts a given string with the Morse Code alphabet.
 	 * Not yet implemented characters in the input string will be left out.
 	 * @return String
 	 * @see String
 	 * @param toDecrypt - input string to be decrypted.
+	 * @since JLight 0.2.0
 	 * @author Imagury (cursustemporum)
 	 */
 	public static String decrypt(String toDecrypt) {

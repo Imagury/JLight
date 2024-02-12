@@ -6,14 +6,17 @@ import java.awt.datatransfer.StringSelection;
 
 /**
  * Head class for system-based utilities.
- * @author Image (cursustemporum)
+ * @since JLight 0.1.0
+ * @author Imagury (cursustemporum)
  *
  */
 public class SystemUtils {
-	
+
 	/**
-	 * Copies a declared string to the OS' clipboard.
+	 * Copies a given string to the OS's clipboard.
 	 * @param toCopy
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public void copyToClipboard(String toCopy) {
 		StringSelection stringSelection = new StringSelection(toCopy);

@@ -7,7 +7,8 @@ import image.exception.NumberCastException;
 
 /**
  * Head class for number-generating methods and constructors.
- * @author Image (cursustemporum)
+ * @since JLight 0.1.0
+ * @author Imagury (cursustemporum)
  *
  */
 public class RandomNumber {
@@ -23,6 +24,8 @@ public class RandomNumber {
 
 	/**
 	 * Header Constructor for using random numbers. Access this class' methods by creating an instance of it.
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public RandomNumber() {}
 
@@ -32,6 +35,8 @@ public class RandomNumber {
 	 * This very constructor is just used to shorten code. Recommended to use default generating constructors.
 	 * Returns a random number.
 	 * @return Number
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	@Deprecated
 	public RandomNumber(Class<?extends Number> type) {
@@ -63,6 +68,8 @@ public class RandomNumber {
 	 * Multiple number types can be created and recalled in one instance at any time.
 	 * Returns a random number with set sign.
 	 * @return Number
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	@Deprecated
 	public RandomNumber(Number type, NumberSign sign) {
@@ -94,6 +101,8 @@ public class RandomNumber {
 	 * Multiple number types can be created and recalled in one instance at any time.
 	 * Returns a random number with set sign and max limit.
 	 * @return Number
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	@Deprecated
 	public RandomNumber(Number type, NumberSign sign, double max) {
@@ -141,6 +150,8 @@ public class RandomNumber {
 	 * @return Boolean
 	 * @see Boolean
 	 * @see Random
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public boolean generateBool() {
 		boolean fin = false;
@@ -155,6 +166,8 @@ public class RandomNumber {
 	 * @return Integer
 	 * @see Integer
 	 * @see Random
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public int generateInt() {
 		int fin = 0;
@@ -170,6 +183,8 @@ public class RandomNumber {
 	 * @see Integer
 	 * @see Random
 	 * @param sign - declaration if the number is positive or negative
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public int generateInt(NumberSign sign) {
 		int fin = 0;
@@ -196,6 +211,8 @@ public class RandomNumber {
 	 * @see Random
 	 * @param sign - declaration if the number is positive or negative
 	 * @param maxValue - maximal value for the output integer.
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public int generateInt(NumberSign sign, int maxValue) {
 		int fin = 0;
@@ -222,6 +239,8 @@ public class RandomNumber {
 	 * @return Long
 	 * @see Long
 	 * @see Random
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public long generateLong() {
 		long fin = 0;
@@ -239,6 +258,8 @@ public class RandomNumber {
 	 * @see Long
 	 * @see Random
 	 * @param sign - declaration if the number is positive or negative
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public long generateLong(NumberSign sign) {
 		long fin = 0;
@@ -264,6 +285,8 @@ public class RandomNumber {
 	 * @return Short
 	 * @see Short
 	 * @see Random
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public short generateShort() {
 		short fin = 0;
@@ -281,6 +304,8 @@ public class RandomNumber {
 	 * @see Short
 	 * @see Random
 	 * @param sign - declaration if the number is positive or negative
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public short generateShort(NumberSign sign) {
 		short fin = 0;
@@ -309,6 +334,8 @@ public class RandomNumber {
 	 * @see Random
 	 * @param sign - declaration if the number is positive or negative
 	 * @param maxValue - maximal value for the output short.
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public int generateShort(NumberSign sign, short maxValue) {
 		short fin = 0;
@@ -335,6 +362,8 @@ public class RandomNumber {
 	 * @return Float
 	 * @see Float
 	 * @see Random
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public float generateFloat() {
 		float fin = 0;
@@ -352,6 +381,8 @@ public class RandomNumber {
 	 * @see Float
 	 * @see Random
 	 * @param sign - declaration if the number is positive or negative
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public float generateFloat(NumberSign sign) {
 		float fin = 0;
@@ -378,6 +409,8 @@ public class RandomNumber {
 	 * @return Double
 	 * @see Double
 	 * @see Random
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public double generateDouble() {
 		double fin = 0;
@@ -395,6 +428,8 @@ public class RandomNumber {
 	 * @see Double
 	 * @see Random
 	 * @param sign - declaration if the number is positive or negative
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public double generateDouble(NumberSign sign) {
 		double fin = 0;
@@ -418,6 +453,8 @@ public class RandomNumber {
 	 * @return Byte
 	 * @see Byte
 	 * @see Random
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public byte generateByte() {
 		int fin = 0;
@@ -431,6 +468,8 @@ public class RandomNumber {
 	 * @return Byte
 	 * @see Byte
 	 * @see Random
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public byte generateByte(byte max) {
 		int fin = 0;
@@ -442,6 +481,8 @@ public class RandomNumber {
 	/**
 	 * Returns last Integer created using this class' methods. Multiple number types can be created and recalled in one instance at any time.
 	 * @return Integer
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public int getLastInt() {
 		return lastInt;
@@ -450,6 +491,8 @@ public class RandomNumber {
 	/**
 	 * Returns last Byte created using this class' methods. Multiple number types can be created and recalled in one instance at any time.
 	 * @return Byte
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public byte getLastByte() {
 		return lastByte;
@@ -458,6 +501,8 @@ public class RandomNumber {
 	/**
 	 * Returns last Short created using this class' methods. Multiple number types can be created and recalled in one instance at any time.
 	 * @return Short
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public short getLastShort() {
 		return lastShort;
@@ -466,6 +511,8 @@ public class RandomNumber {
 	/**
 	 * Returns last Long created using this class' methods. Multiple number types can be created and recalled in one instance at any time.
 	 * @return Long
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public long getLastLong() {
 		return lastLong;
@@ -474,6 +521,8 @@ public class RandomNumber {
 	/**
 	 * Returns last Float created using this class' methods. Multiple number types can be created and recalled in one instance at any time.
 	 * @return Float
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public float getLastFloat() {
 		return lastFloat;
@@ -482,6 +531,8 @@ public class RandomNumber {
 	/**
 	 * Returns last Double created using this class' methods. Multiple number types can be created and recalled in one instance at any time.
 	 * @return Double
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public double getLastDouble() {
 		return lastDouble;
@@ -490,6 +541,8 @@ public class RandomNumber {
 	/**
 	 * Returns last Number created using this class' methods. Multiple number types can be created and recalled in one instance at any time.
 	 * @return Number
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public Number getLast() {
 		return last;

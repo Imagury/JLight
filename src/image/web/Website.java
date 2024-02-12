@@ -14,8 +14,9 @@ import java.net.URL;
 import java.net.URLConnection;
 
 /**
- * Head class for instances of websites.
- * @author Image (cursustemporum)
+ * Head class for creating instances of websites.
+ * @since JLight 0.1.0
+ * @author Imagury (cursustemporum)
  *
  */
 public class Website {
@@ -24,18 +25,20 @@ public class Website {
 
 	/**
 	 * Header class for websites. Uses String type as declaration for the Website's URL.
-	 * @author Image (cursustemporum)
 	 * @param URL (String)
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public Website(String URL) {
 		this.URL = URL;
 	}
-	
+
 	/**
 	 * Header class for websites. Uses URL type as declaration for the Website's URL.
 	 * Recommended to use string-type declaration for a Website, because this constructor is calling the URL's host as a string.
-	 * @author Image (cursustemporum)
 	 * @param URL (URL-Object)
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public Website(URL URL) {
 		this.URL = URL.getHost();
@@ -44,6 +47,7 @@ public class Website {
 	/**
 	 * Returns a declared {@link #Website}'s URL.
 	 * @return URL (String)
+	 * @author Imagury (cursustemporum)
 	 */
 	public String getURL() {
 		return this.URL;
@@ -54,6 +58,8 @@ public class Website {
 	 * Uses Mozilla/4.0 User-Agent as request property.
 	 * @return HTML {@link #Website} content (String)
 	 * @throws IOException
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public String readContent() throws IOException {
 		String output = "";
@@ -71,6 +77,8 @@ public class Website {
 	/**
 	 * Opens a declared {@link #Website} on your OS.
 	 * @param URL
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public void open() {
 		URI uri = URI.create(this.URL);
@@ -86,6 +94,8 @@ public class Website {
 	 * Downloads the HTML content of a declared {@link #Website}. Also a extension for {@link #readContent()}.
 	 * @param fileOut - output path for the downloaded file
 	 * @throws IOException
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	@SuppressWarnings("unused")
 	public void download(String fileOut) throws IOException {

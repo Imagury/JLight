@@ -8,7 +8,8 @@ import java.nio.file.Paths;
 
 /**
  * Head class for editing and managing files.
- * @author Image (cursustemporum)
+ * @since JLight 0.1.0
+ * @author Imagury (cursustemporum)
  *
  */
 public class FileEditable extends File {
@@ -18,7 +19,8 @@ public class FileEditable extends File {
 
 	/**
 	 * Head class for editing and managing files.
-	 * @author Image (cursustemporum)
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 *
 	 */
 	public FileEditable(String pathname) {
@@ -30,38 +32,46 @@ public class FileEditable extends File {
 	 * Returns file content.
 	 * @return String
 	 * @throws IOException
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public String getContent() throws IOException{
 		return new String (Files.readAllBytes(Paths.get(this.pathname)));
 	}
-	
+
 	/**
 	 * Creates a duplicated file at the given path.
 	 * @param toPath - output path for the copied file.
 	 * @throws IOException
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public void copy(String toPath) throws IOException {
 		String write = this.getContent();
 		write(write);
 	}
-	
+
 	/**
 	 * Writes to a file. (Overwrites the old content)
 	 * @see #appendToFile(String)
 	 * @param toWrite
 	 * @throws IOException
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public void write(String toWrite) throws IOException{
 		FileWriter w = new FileWriter(this.pathname, false);
 		w.write(toWrite);
 		w.close();
 	}
-	
+
 	/**
 	 * Appends to a file. (Keeps the old content) <p>
 	 * @see #writeToFile(String)
 	 * @param toAppend
 	 * @throws IOException
+	 * @since JLight 0.1.0
+	 * @author Imagury (cursustemporum)
 	 */
 	public void append(String toAppend) throws IOException{
 		FileWriter w = new FileWriter(this.pathname, true);
