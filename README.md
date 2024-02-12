@@ -1,4 +1,7 @@
 # JLIGHT
+
+![GitHub Release](https://img.shields.io/github/v/release/cursustemporum/JLight)
+
 > JLIGHT is a Java Library developed to faciliate a more user-friendly and clear programming experience. JLight's main purpose is to simplify and shorten Java code by bringing a range of pre-defined methods and constructors ready for you to use.
 
 ![JLight Logo](readme-src/JLight.png)
