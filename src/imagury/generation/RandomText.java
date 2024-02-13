@@ -1,11 +1,11 @@
-package image.generation;
+package imagury.generation;
 
 import java.util.Random;
 
 /**
  * Head class for string- and character-generating methods.
  * @since JLight 0.1.0
- * @author Imagury (cursustemporum)
+ * @author Imagury 
  *
  */
 public class RandomText {
@@ -18,7 +18,7 @@ public class RandomText {
 	/**
 	 * Header Constructor for using random string and characters. Access this class' methods by creating an instance of it.
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public RandomText() {}
 
@@ -31,7 +31,7 @@ public class RandomText {
 	 * @see Random
 	 * @see <a href="https://www.rapidtables.com/code/text/ascii-table.html">ASCII Table (Online)</a>
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 
 	public static String generateString() {
 		int leftLimit = defaultLeftLimit;
@@ -59,7 +59,7 @@ public class RandomText {
 	 * @see Random
 	 * @see <a href="https://www.rapidtables.com/code/text/ascii-table.html">ASCII Table (Online)</a>
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public static String generateString(int length) {
 		int leftLimit = defaultLeftLimit;
@@ -95,7 +95,7 @@ public class RandomText {
 	 * @see Random
 	 * @see <a href="https://www.rapidtables.com/code/text/ascii-table.html">ASCII Table (Online)</a>
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public static String generateString(int length, int leftLimit, int rightLimit) {
 		int targetStringLength = length;
@@ -121,7 +121,7 @@ public class RandomText {
 	 * @see Random
 	 * @see <a href="https://www.rapidtables.com/code/text/ascii-table.html">ASCII Table (Online)</a>
 	 * @since JLight 0.3.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public static String generateString(int length, GenerationBorders borders) {
 		int targetStringLength = length;
@@ -144,7 +144,7 @@ public class RandomText {
 	 * @see Random
 	 * @see <a href="https://www.rapidtables.com/code/text/ascii-table.html">ASCII Table (Online)</a>
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public static Character generateChar() {
 		char c = generateString(1).charAt(0);
@@ -168,7 +168,7 @@ public class RandomText {
 	 * @see Random
 	 * @see <a href="https://www.rapidtables.com/code/text/ascii-table.html">ASCII Table (Online)</a>
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public static Character generateChar(int leftLimit, int rightLimit) {
 		Character c = generateString(1, leftLimit, rightLimit).charAt(0);
@@ -180,7 +180,7 @@ public class RandomText {
 	 * Returns last String created using this class' methods.
 	 * @return String
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public static String getLastString() {
 		return lastString;
@@ -190,7 +190,7 @@ public class RandomText {
 	 * Returns last Character created using this class' methods.
 	 * @return Character
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public static char getLastChar() {
 		return lastChar;

@@ -1,4 +1,4 @@
-package image.minecraft;
+package imagury.minecraft;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
@@ -8,7 +8,7 @@ import org.bukkit.command.ConsoleCommandSender;
  * Head interface for working with Minecraft Craftbukkit.
  * <dt><span class="strong">IMPORTANT INFORMATION</span></dt><dd>Using this interface requires Craftbukkit to be already included into the classpath!</dd>
  * @since JLight 0.3.0
- * @author Imagury (cursustemporum)
+ * @author Imagury 
  */
 public interface BukkitExtension {
 
@@ -17,7 +17,7 @@ public interface BukkitExtension {
 	/**
 	 * Head class for working with Server-side related functions with Craftbukkit.
 	 * @since JLight 0.3.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 *
 	 */
 	public class Server {
@@ -25,7 +25,7 @@ public interface BukkitExtension {
 		/**
 		 * Stops the Bukkit server.
 		 * @since JLight 0.3.0
-		 * @author Imagury (cursustemporum)
+		 * @author Imagury 
 		 */
 		public static void stopServer() {
 			Bukkit.dispatchCommand(_sender, "stop");
@@ -35,7 +35,7 @@ public interface BukkitExtension {
 		 * Executes a command from the Bukkit server console.
 		 * @param command - Command to be executed
 		 * @since JLight 0.3.0
-		 * @author Imagury (cursustemporum)
+		 * @author Imagury 
 		 */
 		public static void executeConsoleCommand(String command) {
 			Bukkit.dispatchCommand(_sender, command);
@@ -46,7 +46,7 @@ public interface BukkitExtension {
 		 * @param command - Command to be executed
 		 * @param sender - Specified sender to execute the command
 		 * @since JLight 0.3.0
-		 * @author Imagury (cursustemporum)
+		 * @author Imagury 
 		 */
 		public static void executeConsoleCommand(CommandSender sender, String command) {
 			Bukkit.dispatchCommand(sender, command);

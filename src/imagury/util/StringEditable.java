@@ -1,9 +1,9 @@
-package image.util;
+package imagury.util;
 
 /**
  * Head class for editing and strings.
  * @since JLight 0.2.0
- * @author Imagury (cursustemporum)
+ * @author Imagury 
  *
  */
 public class StringEditable {
@@ -12,7 +12,7 @@ public class StringEditable {
 	/**
 	 * Head class for editing and strings.
 	 * @since JLight 0.2.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 *
 	 */
 	public StringEditable(String value) {
@@ -22,7 +22,7 @@ public class StringEditable {
 	/**
 	 * Returns the previously inserted string value of the StringEditable object.
 	 * @since JLight 0.2.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	@Override
 	public final String toString() {
@@ -33,7 +33,7 @@ public class StringEditable {
 	 * Changes the current string value of the StringEditable object.
 	 * @param - New string to be attached to the StringEditable object
 	 * @since JLight 0.2.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public final void setString(String newString) {
 		this.value = newString;
@@ -43,7 +43,7 @@ public class StringEditable {
 	 * Inserts a given string snippet between each character of the main string.
 	 * @param separator - String snippet to insert
 	 * @since JLight 0.2.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public final void intersect(String separator) {
 		StringBuilder sb = new StringBuilder();
@@ -62,7 +62,7 @@ public class StringEditable {
 	 * @param separator - String snippet to insert
 	 * @param groupSize - Maximal size of each string group.
 	 * @since JLight 0.2.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public final void intersect(String separator, int groupSize) {
 		StringBuilder sb = new StringBuilder();
@@ -82,7 +82,7 @@ public class StringEditable {
 	 * @param size - Group size for grouping
 	 * @return Grouped StringArray
 	 * @since JLight 0.2.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public final String[] group(int size) {
 		int finalSize = (int) Math.ceil(value.length() / size)+1;
@@ -104,7 +104,7 @@ public class StringEditable {
 	 * Reverses the main string by appending each character from the back.
 	 * @return Inverted String
 	 * @since JLight 0.3.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public final void invert() {
 		StringBuilder sb = new StringBuilder();

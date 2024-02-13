@@ -1,11 +1,11 @@
-package image.cipher;
+package imagury.cipher;
 
 /**
  * Head class for caesar-cipher encryption and decryption.
  * The Caesar cipher uses a character-shifting algorithm which
  * iterates through the ASCII characters from 32 (SPACE) to 126 (~).
  * @since JLight 0.1.0
- * @author Imagury (cursustemporum)
+ * @author Imagury 
  */
 public class CaesarCipher {
 
@@ -20,7 +20,7 @@ public class CaesarCipher {
 	 * @param offset - offset of how much steps the alphabet is going to be shifted.
 	 * @see <a href="https://www.rapidtables.com/code/text/ascii-table.html">ASCII Table (Online)</a>
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public static String encrypt(String toEncrypt, int offset) {
 		StringBuilder result = new StringBuilder();
@@ -45,7 +45,7 @@ public class CaesarCipher {
 	 * @param offset - offset of how much steps the alphabet is going to be shifted.
 	 * @see <a href="https://www.rapidtables.com/code/text/ascii-table.html">ASCII Table (Online)</a>
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public static String decrypt(String toDecrypt, int offset) {
 		return encrypt(toDecrypt, 94 - (offset % 94));

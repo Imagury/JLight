@@ -1,4 +1,4 @@
-package image.enums;
+package imagury.enums;
 
 /**
  * A very simple enum specifying whether a generated number should be positive or negative.
@@ -7,7 +7,7 @@ package image.enums;
  * @param NEGATIVE (-)
  * @param UNDEFINED (+/-)
  * @since JLight 0.1.0
- * @author Imagury (cursustemporum)
+ * @author Imagury 
  */
 public enum NumberSign {
 	POSITIVE,

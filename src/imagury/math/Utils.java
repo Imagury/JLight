@@ -1,9 +1,9 @@
-package image.math;
+package imagury.math;
 
 /**
  * Head class for smaller mathematic functions which cannot be put into a specific category.
  * @since JLight 0.3.0
- * @author Imagury (cursustemporum)
+ * @author Imagury 
  *
  */
 public class Utils {
@@ -13,7 +13,7 @@ public class Utils {
 	 * @param num - Number to be checked
 	 * @return Boolean
 	 * @since JLight 0.3.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public static final boolean isEven(int num) {
 		return num%2==0 ? true : false;

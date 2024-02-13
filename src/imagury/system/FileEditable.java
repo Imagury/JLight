@@ -1,4 +1,4 @@
-package image.system;
+package imagury.system;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 /**
  * Head class for editing and managing files.
  * @since JLight 0.1.0
- * @author Imagury (cursustemporum)
+ * @author Imagury 
  *
  */
 public class FileEditable extends File {
@@ -20,7 +20,7 @@ public class FileEditable extends File {
 	/**
 	 * Head class for editing and managing files.
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 *
 	 */
 	public FileEditable(String pathname) {
@@ -33,7 +33,7 @@ public class FileEditable extends File {
 	 * @return String
 	 * @throws IOException
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public String getContent() throws IOException{
 		return new String (Files.readAllBytes(Paths.get(this.pathname)));
@@ -44,7 +44,7 @@ public class FileEditable extends File {
 	 * @param toPath - output path for the copied file.
 	 * @throws IOException
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public void copy(String toPath) throws IOException {
 		String write = this.getContent();
@@ -57,7 +57,7 @@ public class FileEditable extends File {
 	 * @param toWrite
 	 * @throws IOException
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public void write(String toWrite) throws IOException{
 		FileWriter w = new FileWriter(this.pathname, false);
@@ -71,7 +71,7 @@ public class FileEditable extends File {
 	 * @param toAppend
 	 * @throws IOException
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public void append(String toAppend) throws IOException{
 		FileWriter w = new FileWriter(this.pathname, true);

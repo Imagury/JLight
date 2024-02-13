@@ -1,4 +1,4 @@
-package image.cipher;
+package imagury.cipher;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,7 +8,7 @@ import java.util.Map;
  * Morse uses a special alphabet with one equivalent to each character,
  * consisting out of dashes (-) and dots (.).
  * @since JLight 0.2.0
- * @author Imagury (cursustemporum)
+ * @author Imagury 
  *
  */
 public class MorseCode {
@@ -36,7 +36,7 @@ public class MorseCode {
 	 * @see String
 	 * @param toEncrypt - input string to be encrypted.
 	 * @since JLight 0.2.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public static String encrypt(String toEncrypt) {
 		init_alphabet();
@@ -60,7 +60,7 @@ public class MorseCode {
 	 * @see String
 	 * @param toDecrypt - input string to be decrypted.
 	 * @since JLight 0.2.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public static String decrypt(String toDecrypt) {
 		init_alphabet();

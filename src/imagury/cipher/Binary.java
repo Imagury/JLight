@@ -1,12 +1,12 @@
-package image.cipher;
+package imagury.cipher;
 
-import image.util.StringEditable;
+import imagury.util.StringEditable;
 
 /**
  * Head class for binary encryption and decryption.
  * As the name suggests, binary uses a number system with two digits (0, 1).
  * @since JLight 0.3.0
- * @author Imagury (cursustemporum)
+ * @author Imagury
  *
  */
 public class Binary {
@@ -22,7 +22,7 @@ public class Binary {
 	 * @see String
 	 * @param toEncrypt - input number to be encrypted.
 	 * @since JLight 0.3.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury
 	 */
 	public static String encrypt(int toEncrypt) {
 		StringBuilder sb = new StringBuilder();
@@ -43,12 +43,13 @@ public class Binary {
 	}
 	
 	/**
-	 * Decrypts a given binary-string from the Binary number-system.
+	 * This is the inversion of the original {@link #encrypt(int)} method.
+	 * It decrypts a given binary-string from the Binary number-system.
 	 * @return Integer
 	 * @see Integer
 	 * @param toDecrypt - input binary-string to be decrypted.
 	 * @since JLight 0.3.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury
 	 */
 	public static int decrypt(String toDecrypt) {
 		int fin = 0;

@@ -1,5 +1,5 @@
 JLIGHT Build Information
 
-Version: 0.3.0
-Author: Imagury (cursustemporum)
-Finished: Mon Feb 12 2024
+Version: 0.3.0-rc2
+Author: Imagury
+Finished: Tue Feb 13 2024

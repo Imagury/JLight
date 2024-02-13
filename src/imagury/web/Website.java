@@ -1,4 +1,4 @@
-package image.web;
+package imagury.web;
 
 import java.awt.Desktop;
 import java.io.BufferedInputStream;
@@ -16,7 +16,7 @@ import java.net.URLConnection;
 /**
  * Head class for creating instances of websites.
  * @since JLight 0.1.0
- * @author Imagury (cursustemporum)
+ * @author Imagury 
  *
  */
 public class Website {
@@ -27,7 +27,7 @@ public class Website {
 	 * Header class for websites. Uses String type as declaration for the Website's URL.
 	 * @param URL (String)
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public Website(String URL) {
 		this.URL = URL;
@@ -38,7 +38,7 @@ public class Website {
 	 * Recommended to use string-type declaration for a Website, because this constructor is calling the URL's host as a string.
 	 * @param URL (URL-Object)
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public Website(URL URL) {
 		this.URL = URL.getHost();
@@ -47,7 +47,7 @@ public class Website {
 	/**
 	 * Returns a declared {@link #Website}'s URL.
 	 * @return URL (String)
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public String getURL() {
 		return this.URL;
@@ -59,7 +59,7 @@ public class Website {
 	 * @return HTML {@link #Website} content (String)
 	 * @throws IOException
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public String readContent() throws IOException {
 		String output = "";
@@ -78,7 +78,7 @@ public class Website {
 	 * Opens a declared {@link #Website} on your OS.
 	 * @param URL
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	public void open() {
 		URI uri = URI.create(this.URL);
@@ -95,7 +95,7 @@ public class Website {
 	 * @param fileOut - output path for the downloaded file
 	 * @throws IOException
 	 * @since JLight 0.1.0
-	 * @author Imagury (cursustemporum)
+	 * @author Imagury 
 	 */
 	@SuppressWarnings("unused")
 	public void download(String fileOut) throws IOException {

@@ -1,4 +1,4 @@
-package image.generation;
+package imagury.generation;
 
 /**
  * An enum with pre-defined border settings for generating strings from the ASCII table.
@@ -13,7 +13,7 @@ package image.generation;
  * @param EXTENDED (¡ - ÿ)
  * @see <a href="https://www.rapidtables.com/code/text/ascii-table.html">ASCII Table (Online)</a>
  * @since JLight 0.3.0
- * @author Imagury (cursustemporum)
+ * @author Imagury 
  */
 public enum GenerationBorders {
 	EVERYTHING(0, 255),
