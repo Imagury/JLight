@@ -16,8 +16,6 @@
  
  JLight gets updated regularly, where bugs will be fixed and new features will be added.
 
-**Disclaimer: JLight and CLight are both completely free to use and don't require any permission from its owner to use.**
-
 ## Dependencies
 > Some Objects in JLight require specific libraries to be already included into the classpath.
 > Here you can find a clear declaration.
