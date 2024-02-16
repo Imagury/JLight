@@ -17,7 +17,7 @@
  JLight gets updated regularly, where bugs will be fixed and new features will be added.
 
 ## Dependencies
-> Some Objects in JLight require specific libraries to be already included into the classpath.
+> Some Objects in JLight require specific libraries to be already included in the classpath.
 > Here you can find a clear declaration.
 
 | Object | Required Library |
