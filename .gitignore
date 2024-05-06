@@ -5,3 +5,4 @@ target/
 .project
 releases/
 src/info/update-log.txt
+invis/

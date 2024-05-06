@@ -57,8 +57,8 @@ public class StringEditable {
 	}
 
 	/**
-	 * Inserts a given string snippet between each group of the main string.
-	 * Each string-group has the maximal size of GROUPSIZE.
+	 * The main String will be seperated into groups of GROUPSIZE.
+	 * This method inserts a given string snippet between each group of the main string.
 	 * @param separator - String snippet to insert
 	 * @param groupSize - Maximal size of each string group.
 	 * @since JLight 0.2.0

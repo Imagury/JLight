@@ -17,9 +17,9 @@ public class RandomNumber {
 	static int lastInt = 0;
 	static byte lastByte = 0;
 	static short lastShort = 0;
-	static long lastLong = 0;
-	static float lastFloat = 0;
-	static double lastDouble = 0.0;
+	static long lastLong = 0L;
+	static float lastFloat = 0F;
+	static double lastDouble = 0.0D;
 	static Number last = 0;
 
 	/**
@@ -153,7 +153,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public boolean generateBool() {
+	public static boolean generateBool() {
 		boolean fin = false;
 		Random random = new Random();
 		fin = random.nextBoolean();
@@ -169,7 +169,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public int generateInt() {
+	public static int generateInt() {
 		int fin = 0;
 		Random random = new Random();
 		fin = random.nextInt();
@@ -186,7 +186,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public int generateInt(NumberSign sign) {
+	public static int generateInt(NumberSign sign) {
 		int fin = 0;
 		Random random = new Random();
 		fin = random.nextInt();
@@ -214,7 +214,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public int generateInt(NumberSign sign, int maxValue) {
+	public static int generateInt(NumberSign sign, int maxValue) {
 		int fin = 0;
 		Random random = new Random();
 		fin = random.nextInt(maxValue);
@@ -242,7 +242,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public long generateLong() {
+	public static long generateLong() {
 		long fin = 0;
 		Random random = new Random();
 		fin = random.nextLong();
@@ -261,7 +261,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public long generateLong(NumberSign sign) {
+	public static long generateLong(NumberSign sign) {
 		long fin = 0;
 		Random random = new Random();
 		fin = random.nextLong();
@@ -288,7 +288,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public short generateShort() {
+	public static short generateShort() {
 		short fin = 0;
 		Random random = new Random();
 		fin = (short) random.nextInt(Short.MAX_VALUE + 1);
@@ -307,7 +307,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public short generateShort(NumberSign sign) {
+	public static short generateShort(NumberSign sign) {
 		short fin = 0;
 		Random random = new Random();
 		fin = (short) random.nextInt(Short.MAX_VALUE + 1);;
@@ -337,7 +337,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public int generateShort(NumberSign sign, short maxValue) {
+	public static int generateShort(NumberSign sign, short maxValue) {
 		short fin = 0;
 		Random random = new Random();
 		fin = (short) random.nextInt(maxValue);
@@ -365,7 +365,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public float generateFloat() {
+	public static float generateFloat() {
 		float fin = 0;
 		Random random = new Random();
 		fin = random.nextFloat();
@@ -384,7 +384,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public float generateFloat(NumberSign sign) {
+	public static float generateFloat(NumberSign sign) {
 		float fin = 0;
 		Random random = new Random();
 		fin = random.nextFloat();
@@ -412,7 +412,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public double generateDouble() {
+	public static double generateDouble() {
 		double fin = 0;
 		Random random = new Random();
 		fin = random.nextGaussian();
@@ -431,7 +431,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public double generateDouble(NumberSign sign) {
+	public static double generateDouble(NumberSign sign) {
 		double fin = 0;
 		Random random = new Random();
 		fin = random.nextGaussian();
@@ -456,7 +456,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public byte generateByte() {
+	public static byte generateByte() {
 		int fin = 0;
 		fin = generateInt(NumberSign.POSITIVE, 127);
 		lastByte = (byte) fin;
@@ -471,7 +471,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public byte generateByte(byte max) {
+	public static byte generateByte(byte max) {
 		int fin = 0;
 		fin = generateInt(NumberSign.POSITIVE, max);
 		lastByte = (byte) fin;
@@ -484,7 +484,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public int getLastInt() {
+	public static int getLastInt() {
 		return lastInt;
 	}
 
@@ -494,7 +494,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public byte getLastByte() {
+	public static byte getLastByte() {
 		return lastByte;
 	}
 
@@ -504,7 +504,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public short getLastShort() {
+	public static short getLastShort() {
 		return lastShort;
 	}
 
@@ -514,7 +514,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public long getLastLong() {
+	public static long getLastLong() {
 		return lastLong;
 	}
 
@@ -524,7 +524,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public float getLastFloat() {
+	public static float getLastFloat() {
 		return lastFloat;
 	}
 
@@ -534,7 +534,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public double getLastDouble() {
+	public static double getLastDouble() {
 		return lastDouble;
 	}
 
@@ -544,7 +544,7 @@ public class RandomNumber {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public Number getLast() {
+	public static Number getLast() {
 		return last;
 	}
 }

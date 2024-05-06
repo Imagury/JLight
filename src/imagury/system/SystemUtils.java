@@ -18,7 +18,7 @@ public class SystemUtils {
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public void copyToClipboard(String toCopy) {
+	public static void copyToClipboard(String toCopy) {
 		StringSelection stringSelection = new StringSelection(toCopy);
 		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 		clipboard.setContents(stringSelection, null);

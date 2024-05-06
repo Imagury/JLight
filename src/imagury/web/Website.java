@@ -25,6 +25,7 @@ public class Website {
 
 	/**
 	 * Header class for websites. Uses String type as declaration for the Website's URL.
+	 * This Constructor creates an instance of a Website by using the given Website URL (String).
 	 * @param URL (String)
 	 * @since JLight 0.1.0
 	 * @author Imagury 
@@ -35,8 +36,8 @@ public class Website {
 
 	/**
 	 * Header class for websites. Uses URL type as declaration for the Website's URL.
-	 * Recommended to use string-type declaration for a Website, because this constructor is calling the URL's host as a string.
-	 * @param URL (URL-Object)
+	 * This Constructor creates an instance of a Website by using the given Website URL (URL).
+	 * @param URL (URL)
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
@@ -75,12 +76,12 @@ public class Website {
 	}
 
 	/**
-	 * Opens a declared {@link #Website} on your OS.
+	 * Opens a instanced {@link #Website} on your OS with the default browser.
 	 * @param URL
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
-	public void open() {
+	public final void open() {
 		URI uri = URI.create(this.URL);
 		try {
 			Desktop.getDesktop().browse(uri);
@@ -91,14 +92,14 @@ public class Website {
 	}
 
 	/**
-	 * Downloads the HTML content of a declared {@link #Website}. Also a extension for {@link #readContent()}.
+	 * Downloads the HTML content of a declared {@link #Website}. Used as an extension for {@link #readContent()}.
 	 * @param fileOut - output path for the downloaded file
 	 * @throws IOException
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 */
 	@SuppressWarnings("unused")
-	public void download(String fileOut) throws IOException {
+	public final void download(String fileOut) throws IOException {
 		URL url = new URL(this.URL);
 		HttpURLConnection http = (HttpURLConnection) url.openConnection();
 		double fileSize = (double) http.getContentLengthLong();

@@ -19,6 +19,7 @@ public class FileEditable extends File {
 
 	/**
 	 * Head class for editing and managing files.
+	 * This constructor creates a new FileEditable from a file path.
 	 * @since JLight 0.1.0
 	 * @author Imagury 
 	 *
@@ -27,9 +28,21 @@ public class FileEditable extends File {
 		super(pathname);
 		this.pathname = pathname;
 	}
+	
+	/**
+	 * Head class for editing and managing files.
+	 * This constructor creates a new FileEditable from a given file.
+	 * @since JLight 0.1.0
+	 * @author Imagury 
+	 *
+	 */
+	public FileEditable(File file) {
+		super(file.getAbsolutePath());
+		this.pathname = file.getAbsolutePath();
+	}
 
 	/**
-	 * Returns file content.
+	 * Returns the content from the declared file. The output will be returned in UTF-8 encoding.
 	 * @return String
 	 * @throws IOException
 	 * @since JLight 0.1.0
@@ -47,8 +60,10 @@ public class FileEditable extends File {
 	 * @author Imagury 
 	 */
 	public void copy(String toPath) throws IOException {
+		File n = new File(toPath);
+		FileEditable ne = new FileEditable(n);
 		String write = this.getContent();
-		write(write);
+		ne.write(write);
 	}
 
 	/**
